@@ -5,20 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>КП «Народный учитель» — Про Город × Ресторан «Спасский»</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Comforter&family=Caveat:wght@600;700&family=Inter:wght@400;500;600&family=Russo+One&display=swap" rel="stylesheet">
-<link href="https://fonts.cdnfonts.com/css/lifehack" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" media="print" onload="this.media='all'" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Inter:wght@400;500;600&family=Caveat:wght@700&family=Comforter&family=Russo+One&display=swap">
+<link rel="stylesheet" media="print" onload="this.media='all'" href="https://fonts.cdnfonts.com/css/lifehack">
+<noscript>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Inter:wght@400;500;600&family=Caveat:wght@700&family=Comforter&family=Russo+One&display=swap">
+</noscript>
 <style>
-:root{
-  --cream:#F8ECD4; --cream2:#FDF7EA; --paper:#FFFDF7;
-  --red:#B3271E; --red-bg:#A32020;
-  --gold:#E5B33C; --gold2:#C98F1B; --gold-bg:#B8860B;
-  --ink:#241B10; --mut:#6E6252;
-  --blue:#1B87C9; --blue-l:#5FB2E0;
-  --vk:#0077FF; --tg:#229ED9;
-  --line:#E7D7B4;
-  --sh:0 10px 30px rgba(90,60,20,.10); --sh2:0 18px 50px rgba(90,60,20,.16);
-  --r:22px;
-}
+:root{--cream:#F8ECD4;--cream2:#FDF7EA;--paper:#FFFDF7;--red:#B3271E;--red-bg:#A32020;--gold:#E5B33C;--gold2:#C98F1B;--gold-bg:#B8860B;--ink:#241B10;--mut:#6E6252;--blue:#1B87C9;--blue-l:#5FB2E0;--vk:#0077FF;--tg:#229ED9;--line:#E7D7B4;--sh:0 10px 30px rgba(90,60,20,.10);--sh2:0 18px 50px rgba(90,60,20,.16);--r:22px}
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;overflow-x:hidden}
@@ -26,42 +20,30 @@ h1,h2,h3,h4{font-family:'Montserrat',sans-serif;letter-spacing:-.02em;line-heigh
 .wrap{max-width:1240px;margin:0 auto;padding:0 28px;position:relative;z-index:2}
 .ic{width:26px;height:26px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
 .sec{padding:84px 0;position:relative}
+.sec,footer{content-visibility:auto;contain-intrinsic-size:auto 900px}
 .overline{font-family:'Montserrat';font-weight:700;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold2)}
 .h2{font-size:clamp(28px,4vw,44px);font-weight:800;margin:10px 0 14px}
 .lead{font-size:17px;color:var(--mut);max-width:760px}
 .center{text-align:center}.center .lead{margin:0 auto}
 .nu-script{font-family:'Lifehack','Comforter','Caveat',cursive;font-weight:700;color:var(--blue);line-height:.92}
-
-/* ---------- СЛОТЫ ЛОГОТИПОВ: PNG + SVG-fallback ---------- */
 .logo-slot{display:inline-flex;line-height:0}
 .logo-slot img{width:100%;height:auto;display:block}
 .logo-slot .logo-fb{display:none;width:100%;height:auto}
 .logo-slot.fb .logo-fb{display:block}
-.slot-pg{width:260px}
-.slot-pg-white{width:220px}
-.slot-sp{width:min(300px,72%)}
-.slot-sp-sm{width:110px}
-.slot-nu{width:250px}
+.slot-pg{width:260px}.slot-pg-white{width:220px}.slot-sp{width:min(300px,72%)}.slot-sp-sm{width:110px}.slot-nu{width:250px}
 .logo-pg{color:var(--blue)}
 .logo-spasskiy{filter:drop-shadow(0 16px 30px rgba(60,40,10,.25))}
-
-/* ---------- HERO ---------- */
-.hero{position:relative;padding:56px 0 96px;background:
-  radial-gradient(1200px 500px at 50% -10%, #FFF6E2 0%, transparent 70%), var(--cream);overflow:hidden}
+.hero{position:relative;padding:56px 0 96px;background:radial-gradient(1200px 500px at 50% -10%,#FFF6E2 0%,transparent 70%),var(--cream);overflow:hidden}
 .topbar{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;margin-bottom:56px}
-.stamp{font-family:'Montserrat';font-weight:700;font-size:12px;letter-spacing:.18em;text-transform:uppercase;
-  background:var(--ink);color:var(--cream2);padding:10px 18px;border-radius:999px}
+.stamp{font-family:'Montserrat';font-weight:700;font-size:12px;letter-spacing:.18em;text-transform:uppercase;background:var(--ink);color:var(--cream2);padding:10px 18px;border-radius:999px}
 .hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center}
 .kicker{font-size:clamp(17px,2vw,22px);font-weight:500;max-width:640px;color:#4C3D28}
 .kicker b{color:var(--ink)}
 .project-name{font-size:clamp(76px,11vw,150px);margin:14px 0 4px;transform:rotate(-1.5deg)}
 .project-name span{display:block}
-.tagline{display:inline-flex;align-items:center;gap:12px;font-family:'Montserrat';font-weight:800;
-  color:var(--red);font-size:clamp(15px,1.6vw,19px);border-top:2px solid var(--red);border-bottom:2px solid var(--red);
-  padding:10px 4px;margin:14px 0 26px}
+.tagline{display:inline-flex;align-items:center;gap:12px;font-family:'Montserrat';font-weight:800;color:var(--red);font-size:clamp(15px,1.6vw,19px);border-top:2px solid var(--red);border-bottom:2px solid var(--red);padding:10px 4px;margin:14px 0 26px}
 .hero-facts{display:flex;gap:14px;flex-wrap:wrap}
-.fact{background:var(--paper);border:1.5px solid var(--line);border-radius:16px;padding:14px 18px;box-shadow:var(--sh);
-  display:flex;gap:12px;align-items:center}
+.fact{background:var(--paper);border:1.5px solid var(--line);border-radius:16px;padding:14px 18px;box-shadow:var(--sh);display:flex;gap:12px;align-items:center}
 .fact .ic{color:var(--gold2)}
 .fact b{font-family:'Montserrat';font-size:14px;display:block}
 .fact span{font-size:12.5px;color:var(--mut)}
@@ -71,18 +53,13 @@ h1,h2,h3,h4{font-family:'Montserrat',sans-serif;letter-spacing:-.02em;line-heigh
 .period b{font-family:'Montserrat';font-size:20px}
 .deco{position:absolute;pointer-events:none;z-index:1}
 .deco svg{display:block;width:100%;height:100%}
-
-/* ---------- CARDS ---------- */
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:26px}
 .card{background:var(--paper);border:1.5px solid var(--line);border-radius:var(--r);padding:34px;box-shadow:var(--sh)}
 .card h3{font-size:22px;font-weight:800;margin-bottom:16px;display:flex;align-items:center;gap:12px}
 .card h3 .ic{color:var(--gold2);width:30px;height:30px}
 .num-list{counter-reset:n;list-style:none}
 .num-list li{counter-increment:n;padding:12px 0 12px 52px;position:relative;font-size:15px}
-.num-list li::before{content:counter(n,decimal-leading-zero);position:absolute;left:0;top:10px;
-  font-family:'Montserrat';font-weight:800;font-size:15px;color:var(--red);
-  width:36px;height:36px;border:2px solid var(--red);border-radius:50%;display:grid;place-items:center}
-
+.num-list li::before{content:counter(n,decimal-leading-zero);position:absolute;left:0;top:10px;font-family:'Montserrat';font-weight:800;font-size:15px;color:var(--red);width:36px;height:36px;border:2px solid var(--red);border-radius:50%;display:grid;place-items:center}
 .why{background:var(--ink);color:var(--cream2)}
 .why .lead{color:#C9BBA6}
 .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
@@ -92,10 +69,8 @@ h1,h2,h3,h4{font-family:'Montserrat',sans-serif;letter-spacing:-.02em;line-heigh
 .why-card h4{font-size:18px;font-weight:800;margin-bottom:10px;color:#fff}
 .why-card p{font-size:14px;color:#C9BBA6}
 .why-card b{color:var(--gold)}
-
 .price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:46px}
-.price{border-radius:26px;padding:38px 30px;color:#fff;position:relative;overflow:hidden;box-shadow:var(--sh2);
-  display:flex;flex-direction:column;transition:.35s}
+.price{border-radius:26px;padding:38px 30px;color:#fff;position:relative;overflow:hidden;box-shadow:var(--sh2);display:flex;flex-direction:column;transition:.35s}
 .price:hover{transform:translateY(-10px) scale(1.015)}
 .price.gen{background:linear-gradient(160deg,#C0392B 0%,var(--red-bg) 55%,#7E150F 100%)}
 .price.spo{background:linear-gradient(160deg,#D9A62E 0%,var(--gold-bg) 60%,#8A6508 100%)}
@@ -109,20 +84,17 @@ h1,h2,h3,h4{font-family:'Montserrat',sans-serif;letter-spacing:-.02em;line-heigh
 .p-row b{font-family:'Montserrat';font-size:30px;font-weight:900}
 .p-row b i{font-style:normal;font-size:16px;font-weight:700}
 .price .note{margin-top:auto;font-size:12.5px;opacity:.85;padding-top:14px}
-.price .flag{position:absolute;top:22px;right:-34px;transform:rotate(38deg);background:rgba(0,0,0,.28);
-  font:700 11px 'Montserrat';letter-spacing:.18em;padding:7px 40px;text-transform:uppercase}
-
+.price .flag{position:absolute;top:22px;right:-34px;transform:rotate(38deg);background:rgba(0,0,0,.28);font:700 11px 'Montserrat';letter-spacing:.18em;padding:7px 40px;text-transform:uppercase}
 .month{font-family:'Caveat',cursive;font-weight:700;font-size:46px;color:var(--red);text-align:center;margin:44px 0 22px}
 .pack-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 .pack{background:var(--paper);border:1.5px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--sh)}
 .pack-h{display:flex;align-items:center;gap:10px;padding:16px 20px;color:#fff;font:800 14.5px 'Montserrat'}
 .pack-h .ic{width:20px;height:20px}
-.pack.gen .pack-h{background:var(--red-bg)} .pack.spo .pack-h{background:var(--gold-bg)} .pack.bus .pack-h{background:var(--gold2);color:var(--ink)}
+.pack.gen .pack-h{background:var(--red-bg)}.pack.spo .pack-h{background:var(--gold-bg)}.pack.bus .pack-h{background:var(--gold2);color:var(--ink)}
 .pack ul{list-style:none;padding:20px 22px}
 .pack li{display:flex;gap:10px;font-size:14px;padding:9px 0;border-bottom:1px dashed var(--line)}
 .pack li:last-child{border:0}
 .pack li .ic{width:18px;height:18px;color:#2E9E44;margin-top:2px}
-
 .reach-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:44px}
 .reach{background:var(--paper);border:1.5px solid var(--line);border-radius:18px;padding:28px;text-align:center;box-shadow:var(--sh);transition:.3s}
 .reach:hover{transform:translateY(-6px);box-shadow:var(--sh2)}
@@ -130,12 +102,9 @@ h1,h2,h3,h4{font-family:'Montserrat',sans-serif;letter-spacing:-.02em;line-heigh
 .reach b{font-family:'Montserrat';font-size:30px;font-weight:900;display:block}
 .reach span{font-size:13px;color:var(--mut);font-weight:600}
 .reach small{display:block;font-size:12px;color:var(--mut);margin-top:6px}
-.total{margin-top:26px;background:var(--ink);color:var(--cream2);border-radius:18px;padding:22px 30px;
-  display:flex;align-items:center;gap:18px;flex-wrap:wrap;justify-content:center;font-size:16px}
+.total{margin-top:26px;background:var(--ink);color:var(--cream2);border-radius:18px;padding:22px 30px;display:flex;align-items:center;gap:18px;flex-wrap:wrap;justify-content:center;font-size:16px}
 .total b{font-family:'Montserrat';font-size:26px;color:var(--gold)}
-
-.opp-bar{background:var(--paper);border:2px solid var(--red-bg);border-radius:20px;padding:30px 34px;
-  display:flex;align-items:center;gap:34px;flex-wrap:wrap;box-shadow:var(--sh)}
+.opp-bar{background:var(--paper);border:2px solid var(--red-bg);border-radius:20px;padding:30px 34px;display:flex;align-items:center;gap:34px;flex-wrap:wrap;box-shadow:var(--sh)}
 .opp-bar .t{flex:1 1 260px;display:flex;gap:14px;align-items:center;font:800 19px 'Montserrat';color:var(--red-bg)}
 .opp-bar .t .ic{width:34px;height:34px}
 .opp-items{flex:3 1 520px;display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
@@ -143,13 +112,11 @@ h1,h2,h3,h4{font-family:'Montserrat',sans-serif;letter-spacing:-.02em;line-heigh
 .opp:first-child{border-left:0}
 .opp .ic{width:30px;height:30px;color:var(--red-bg);margin:0 auto 10px;display:block}
 .opp b{font:700 12.5px 'Montserrat';line-height:1.35;display:block}
-
 .ideas{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
-.idea{background:linear-gradient(160deg,#FFF9EC, var(--paper));border:1.5px solid var(--line);border-radius:18px;padding:28px;box-shadow:var(--sh)}
+.idea{background:linear-gradient(160deg,#FFF9EC,var(--paper));border:1.5px solid var(--line);border-radius:18px;padding:28px;box-shadow:var(--sh)}
 .idea .n{font-family:'Caveat';font-weight:700;font-size:40px;color:var(--gold2);line-height:1}
 .idea h4{font-size:17px;font-weight:800;margin:10px 0 8px}
 .idea p{font-size:14px;color:var(--mut)}
-
 .cta{background:linear-gradient(140deg,var(--gold) 0%,#EDC565 50%,var(--gold2) 100%);position:relative;overflow:hidden}
 .cta .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center}
 .cta h2{font-size:clamp(28px,3.6vw,42px);font-weight:900;color:var(--ink)}
@@ -158,8 +125,7 @@ h1,h2,h3,h4{font-family:'Montserrat',sans-serif;letter-spacing:-.02em;line-heigh
 .term{background:rgba(255,255,255,.75);border-radius:14px;padding:14px 18px;display:flex;gap:12px;align-items:center;font-size:14px;font-weight:600;color:var(--ink)}
 .term .ic{color:var(--red-bg)}
 .btns{display:flex;gap:14px;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;gap:10px;font:700 15px 'Montserrat';padding:17px 30px;border-radius:999px;
-  text-decoration:none;transition:.3s;border:2px solid var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:10px;font:700 15px 'Montserrat';padding:17px 30px;border-radius:999px;text-decoration:none;transition:.3s;border:2px solid var(--ink)}
 .btn .ic{width:22px;height:22px}
 .btn.dark{background:var(--ink);color:#fff}
 .btn.light{background:#fff;color:var(--ink)}
@@ -172,46 +138,27 @@ h1,h2,h3,h4{font-family:'Montserrat',sans-serif;letter-spacing:-.02em;line-heigh
 .crow .ic.stroke{color:var(--gold2)}
 .crow a{color:var(--blue);font-weight:600;text-decoration:none}
 .crow a:hover{text-decoration:underline}
-
 footer{background:var(--ink);color:#C9BBA6;padding:56px 0 40px;position:relative;overflow:hidden}
 .f-row{display:flex;justify-content:space-between;align-items:center;gap:26px;flex-wrap:wrap}
 .f-row .nu-script{font-size:44px;color:var(--blue-l)}
-.f-note{margin-top:30px;padding-top:24px;border-top:1px solid rgba(255,255,255,.12);font-size:13px;display:flex;
-  justify-content:space-between;gap:20px;flex-wrap:wrap}
+.f-note{margin-top:30px;padding-top:24px;border-top:1px solid rgba(255,255,255,.12);font-size:13px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 .deco-strip{display:flex;justify-content:center;align-items:flex-end;gap:26px;padding:34px 0 0}
 .deco-strip svg{height:56px;width:auto}
-
 .rv{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
 .rv.on{opacity:1;transform:none}
-
-@media(max-width:1020px){
-  .hero-grid,.grid2,.cta .wrap{grid-template-columns:1fr}
-  .why-grid,.price-grid,.pack-grid,.ideas{grid-template-columns:1fr 1fr}
-  .reach-grid{grid-template-columns:1fr 1fr}
-  .opp-items{grid-template-columns:repeat(3,1fr)}
-  .opp{border-left:0}
-}
-@media(max-width:640px){
-  .why-grid,.price-grid,.pack-grid,.ideas,.reach-grid,.opp-items{grid-template-columns:1fr}
-  .sec{padding:60px 0}
-  .deco{display:none}
-}
+@media(max-width:1020px){.hero-grid,.grid2,.cta .wrap{grid-template-columns:1fr}.why-grid,.price-grid,.pack-grid,.ideas{grid-template-columns:1fr 1fr}.reach-grid{grid-template-columns:1fr 1fr}.opp-items{grid-template-columns:repeat(3,1fr)}.opp{border-left:0}}
+@media(max-width:640px){.why-grid,.price-grid,.pack-grid,.ideas,.reach-grid,.opp-items{grid-template-columns:1fr}.sec{padding:60px 0}.deco{display:none}}
 </style>
 </head>
 <body>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
 <defs>
-  <!-- SVG-fallback логотипов (показываются только если PNG не найден) -->
   <symbol id="lg-pg" viewBox="0 0 910 245">
     <text x="6" y="54" font-family="Georgia,'PT Serif',serif" font-size="54" fill="currentColor">Сыктывкар</text>
     <text x="0" y="190" font-family="Georgia,'PT Serif',serif" font-size="150" font-weight="400" fill="currentColor">ПРО</text>
     <text x="330" y="190" font-family="Georgia,'PT Serif',serif" font-size="150" font-weight="700" fill="currentColor">ГОРО</text>
-    <g fill="currentColor">
-      <rect x="775" y="40" width="16" height="150"/><rect x="775" y="40" width="104" height="16"/>
-      <rect x="863" y="40" width="16" height="200"/><rect x="775" y="174" width="104" height="16"/>
-      <rect x="825" y="98" width="24" height="24"/>
-    </g>
+    <g fill="currentColor"><rect x="775" y="40" width="16" height="150"/><rect x="775" y="40" width="104" height="16"/><rect x="863" y="40" width="16" height="200"/><rect x="775" y="174" width="104" height="16"/><rect x="825" y="98" width="24" height="24"/></g>
   </symbol>
   <symbol id="lg-nu" viewBox="0 0 560 300">
     <text x="0" y="118" font-family="Lifehack,Comforter,Caveat,cursive" font-size="130" font-weight="700" fill="currentColor">Народный</text>
@@ -223,17 +170,9 @@ footer{background:var(--ink);color:#C9BBA6;padding:56px 0 40px;position:relative
     <path d="M93 52c-9-7-22-5-25 3-3 9 6 16 15 11-7 0-11-5-8-9 2-4 9-4 12-1z" fill="#211A13"/>
     <path d="M117 52c9-7 22-5 25 3 3 9-6 16-15 11 7 0 11-5 8-9-2-4-9-4-12-1z" fill="#211A13"/>
     <circle cx="105" cy="80" r="3" fill="#211A13"/><circle cx="105" cy="90" r="3" fill="#211A13"/>
-    <g fill="none" stroke="#211A13" stroke-linecap="round">
-      <path d="M30 84c8-12 24-14 32-6" stroke-width="4"/>
-      <path d="M62 78a8 8 0 1 0 8 8 5 5 0 1 0-5-5 2.5 2.5 0 1 0 2.5 2.5" stroke-width="3.5"/>
-      <path d="M84 80a6 6 0 1 0 6 6 3.5 3.5 0 1 0-3.5-3.5" stroke-width="3"/>
-    </g>
+    <g fill="none" stroke="#211A13" stroke-linecap="round"><path d="M30 84c8-12 24-14 32-6" stroke-width="4"/><path d="M62 78a8 8 0 1 0 8 8 5 5 0 1 0-5-5 2.5 2.5 0 1 0 2.5 2.5" stroke-width="3.5"/><path d="M84 80a6 6 0 1 0 6 6 3.5 3.5 0 1 0-3.5-3.5" stroke-width="3"/></g>
     <circle cx="44" cy="92" r="2.4" fill="#211A13"/><circle cx="52" cy="95" r="2.4" fill="#211A13"/><circle cx="60" cy="97" r="2.4" fill="#211A13"/>
-    <g fill="none" stroke="#211A13" stroke-linecap="round" transform="translate(210,0) scale(-1,1)">
-      <path d="M30 84c8-12 24-14 32-6" stroke-width="4"/>
-      <path d="M62 78a8 8 0 1 0 8 8 5 5 0 1 0-5-5 2.5 2.5 0 1 0 2.5 2.5" stroke-width="3.5"/>
-      <path d="M84 80a6 6 0 1 0 6 6 3.5 3.5 0 1 0-3.5-3.5" stroke-width="3"/>
-    </g>
+    <g fill="none" stroke="#211A13" stroke-linecap="round" transform="translate(210,0) scale(-1,1)"><path d="M30 84c8-12 24-14 32-6" stroke-width="4"/><path d="M62 78a8 8 0 1 0 8 8 5 5 0 1 0-5-5 2.5 2.5 0 1 0 2.5 2.5" stroke-width="3.5"/><path d="M84 80a6 6 0 1 0 6 6 3.5 3.5 0 1 0-3.5-3.5" stroke-width="3"/></g>
     <circle cx="166" cy="92" r="2.4" fill="#211A13"/><circle cx="158" cy="95" r="2.4" fill="#211A13"/><circle cx="150" cy="97" r="2.4" fill="#211A13"/>
     <rect x="36" y="102" width="138" height="4" fill="#211A13"/><rect x="36" y="110" width="138" height="2.5" fill="#211A13"/>
     <text x="105" y="148" text-anchor="middle" font-family="'Russo One',Montserrat,sans-serif" font-size="31" fill="#211A13">Спасский</text>
@@ -243,15 +182,9 @@ footer{background:var(--ink);color:#C9BBA6;padding:56px 0 40px;position:relative
     <rect x="50" y="176" width="110" height="30" fill="#211A13"/>
     <text x="105" y="197" text-anchor="middle" font-family="'Russo One',Montserrat,sans-serif" font-size="15" letter-spacing="2" fill="#F7F5F0">ресторанъ</text>
   </symbol>
-  <!-- Соцсети -->
   <symbol id="i-vk" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M15.07 2H8.93C3.33 2 2 3.33 2 8.93v6.14C2 20.67 3.33 22 8.93 22h6.14c5.6 0 6.93-1.33 6.93-6.93V8.93C22 3.33 20.67 2 15.07 2zm3.15 14.24h-1.49c-.56 0-.73-.45-1.74-1.46-.88-.85-1.26-.96-1.48-.96-.31 0-.4.09-.4.52v1.36c0 .37-.12.59-1.09.59-1.6 0-3.37-.97-4.6-2.74C5.53 10.86 5 8.82 5 8.4c0-.22.09-.43.52-.43h1.49c.39 0 .54.18.69.6.76 2.2 2.04 4.13 2.57 4.13.2 0 .29-.09.29-.6V10.2c-.06-1.25-.73-1.35-.73-1.79 0-.2.17-.41.44-.41h2.34c.33 0 .45.18.45.57v3.06c0 .33.15.45.24.45.2 0 .37-.12.74-.5 1.14-1.28 1.95-3.24 1.95-3.24.1-.22.29-.43.68-.43h1.49c.45 0 .55.23.45.57-.2 1.14-2.65 4.0-2.65 4.0-.21.24-.29.35 0 .74.21.29.9.88 1.37 1.42.86.97 1.51 1.79 1.69 2.36.17.56-.11.85-.68.85z"/></symbol>
   <symbol id="i-tg" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></symbol>
-  <symbol id="i-max" viewBox="0 0 24 24">
-    <defs><linearGradient id="mxg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8E5BFF"/><stop offset="1" stop-color="#2E9BFF"/></linearGradient></defs>
-    <rect width="24" height="24" rx="6.5" fill="url(#mxg)"/>
-    <path fill="#fff" stroke="none" d="M6.6 17V7h2.5l2.9 4.9L14.9 7h2.5v10h-2.3v-6.4l-2.5 4.1h-1.2l-2.5-4.1V17H6.6z"/>
-  </symbol>
-  <!-- Иконки -->
+  <symbol id="i-max" viewBox="0 0 24 24"><defs><linearGradient id="mxg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8E5BFF"/><stop offset="1" stop-color="#2E9BFF"/></linearGradient></defs><rect width="24" height="24" rx="6.5" fill="url(#mxg)"/><path fill="#fff" stroke="none" d="M6.6 17V7h2.5l2.9 4.9L14.9 7h2.5v10h-2.3v-6.4l-2.5 4.1h-1.2l-2.5-4.1V17H6.6z"/></symbol>
   <symbol id="i-crown" viewBox="0 0 24 24"><path d="M3 18h18l-1.6-10-4.6 4.2L12 6l-2.8 6.2L4.6 8 3 18z"/><path d="M5 21h14"/></symbol>
   <symbol id="i-mega" viewBox="0 0 24 24"><path d="M3 10v4l3 .6L18 20V4L6 9.4 3 10z"/><path d="M7 15v5h3v-4.6"/><path d="M18 9a3 3 0 0 1 0 6"/></symbol>
   <symbol id="i-case" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></symbol>
@@ -270,28 +203,14 @@ footer{background:var(--ink);color:#C9BBA6;padding:56px 0 40px;position:relative
   <symbol id="i-pres" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M12 16v3M8 21l4-2 4 2"/><path d="M8 12l2.5-3 2 2L16 7"/></symbol>
   <symbol id="i-coins" viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6"/><path d="M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></symbol>
   <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18 14 14 0 0 1 0-18z"/></symbol>
-  <!-- Декор -->
-  <symbol id="d-pen" viewBox="0 0 130 26">
-    <rect x="34" y="5" width="80" height="16" rx="3" fill="currentColor"/>
-    <rect x="34" y="5" width="80" height="6" rx="3" fill="#ffffff" opacity=".28"/>
-    <path d="M34 5L12 13l22 8z" fill="#EAC79C"/><path d="M20 10.2L12 13l8 2.8z" fill="currentColor"/>
-    <rect x="112" y="5" width="10" height="16" rx="3" fill="#00000022"/>
-  </symbol>
+  <symbol id="d-pen" viewBox="0 0 130 26"><rect x="34" y="5" width="80" height="16" rx="3" fill="currentColor"/><rect x="34" y="5" width="80" height="6" rx="3" fill="#fff" opacity=".28"/><path d="M34 5L12 13l22 8z" fill="#EAC79C"/><path d="M20 10.2L12 13l8 2.8z" fill="currentColor"/><rect x="112" y="5" width="10" height="16" rx="3" fill="#00000022"/></symbol>
   <symbol id="d-leaf" viewBox="0 0 100 100"><path d="M50 2l8 24 24-12-8 24 24 6-22 12 12 24-26-10-4 26-8-22-8 22-4-26-26 10 12-24L2 44l24-6-8-24 24 12z" fill="currentColor"/></symbol>
-  <symbol id="d-cone" viewBox="0 0 80 100">
-    <ellipse cx="40" cy="56" rx="30" ry="42" fill="#8A6A3B"/>
-    <g fill="none" stroke="#6B4E28" stroke-width="4" stroke-linecap="round">
-      <path d="M18 34q11 9 22 0q11 9 22 0"/><path d="M14 50q13 10 26 0q13 10 26 0"/>
-      <path d="M16 66q12 10 24 0q12 10 24 0"/><path d="M22 82q9 8 18 0q9 8 18 0"/>
-    </g>
-    <path d="M40 14v-8" stroke="#6B4E28" stroke-width="5" stroke-linecap="round"/>
-  </symbol>
+  <symbol id="d-cone" viewBox="0 0 80 100"><ellipse cx="40" cy="56" rx="30" ry="42" fill="#8A6A3B"/><g fill="none" stroke="#6B4E28" stroke-width="4" stroke-linecap="round"><path d="M18 34q11 9 22 0q11 9 22 0"/><path d="M14 50q13 10 26 0q13 10 26 0"/><path d="M16 66q12 10 24 0q12 10 24 0"/><path d="M22 82q9 8 18 0q9 8 18 0"/></g><path d="M40 14v-8" stroke="#6B4E28" stroke-width="5" stroke-linecap="round"/></symbol>
   <symbol id="d-ball" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor"/><circle cx="8.5" cy="8" r="3" fill="#fff" opacity=".45"/></symbol>
   <symbol id="trees" viewBox="0 0 300 70" preserveAspectRatio="none"><path d="M0 70l15-30 15 30zM25 70l18-40 18 40zM58 70l14-26 14 26zM85 70l18-44 18 44zM118 70l14-28 14 28zM145 70l18-40 18 40zM178 70l14-26 14 26zM205 70l18-44 18 44zM238 70l14-28 14 28zM265 70l18-40 18 40z" fill="currentColor"/></symbol>
 </defs>
 </svg>
 
-<!-- ============ HERO ============ -->
 <header class="hero">
   <div class="deco" style="left:-30px;top:40px;width:190px;transform:rotate(38deg);color:#E58AA0"><svg><use href="#d-pen"/></svg></div>
   <div class="deco" style="left:-10px;top:150px;width:120px;color:#E8A33D"><svg><use href="#d-leaf"/></svg></div>
@@ -304,17 +223,14 @@ footer{background:var(--ink);color:#C9BBA6;padding:56px 0 40px;position:relative
   <div class="deco" style="right:-10px;top:300px;width:100px;color:#E8A33D"><svg><use href="#d-leaf"/></svg></div>
   <div class="deco" style="right:30px;bottom:40px;width:110px"><svg><use href="#d-cone"/></svg></div>
   <div class="deco" style="right:-30px;bottom:90px;width:190px;transform:rotate(200deg);color:#B07BB8"><svg><use href="#d-pen"/></svg></div>
-
   <div class="wrap">
     <div class="topbar">
-      <!-- PNG: синий Про Город -->
       <span class="logo-slot slot-pg">
-        <img src="logo-progorod-blue.png" alt="Про Город Сыктывкар">
+        <img src="logo-progorod-blue.png" alt="Про Город Сыктывкар" fetchpriority="high" decoding="async">
         <svg class="logo-fb logo-pg"><use href="#lg-pg"/></svg>
       </span>
       <div class="stamp">Персональное предложение · ноябрь 2026</div>
     </div>
-
     <div class="hero-grid">
       <div>
         <p class="kicker">Компания <b>«Про Город Сыктывкар»</b> предлагает ресторану <b>«Спасский»</b> стать партнёром городского проекта</p>
@@ -327,15 +243,13 @@ footer{background:var(--ink);color:#C9BBA6;padding:56px 0 40px;position:relative
         </div>
       </div>
       <div class="hero-right">
-        <!-- PNG: овал Спасский -->
         <span class="logo-slot slot-sp">
-          <img src="logo-spasskiy.png" alt="Ресторан «Спасский»">
+          <img src="logo-spasskiy.png" alt="Ресторан «Спасский»" fetchpriority="high" decoding="async">
           <svg class="logo-fb logo-spasskiy"><use href="#lg-sp"/></svg>
         </span>
         <div class="period"><small>Период проведения акции</small><b>ноябрь – декабрь 2026</b></div>
-        <!-- PNG: Народный учитель -->
         <span class="logo-slot slot-nu">
-          <img src="logo-narodny-uchitel.png" alt="Народный учитель">
+          <img src="logo-narodny-uchitel.png" alt="Народный учитель" decoding="async">
           <svg class="logo-fb" style="color:var(--blue)"><use href="#lg-nu"/></svg>
         </span>
       </div>
@@ -343,7 +257,6 @@ footer{background:var(--ink);color:#C9BBA6;padding:56px 0 40px;position:relative
   </div>
 </header>
 
-<!-- ============ О ПРОЕКТЕ ============ -->
 <section class="sec">
   <div class="wrap">
     <div class="overline">Городской спецпроект</div>
@@ -366,7 +279,6 @@ footer{background:var(--ink);color:#C9BBA6;padding:56px 0 40px;position:relative
   </div>
 </section>
 
-<!-- ============ ПОЧЕМУ «СПАССКИЙ» ============ -->
 <section class="sec why">
   <div class="wrap">
     <div class="overline" style="color:var(--gold)">Адаптация под клиента</div>
@@ -383,7 +295,6 @@ footer{background:var(--ink);color:#C9BBA6;padding:56px 0 40px;position:relative
   </div>
 </section>
 
-<!-- ============ ТАРИФЫ ============ -->
 <section class="sec">
   <div class="wrap">
     <div class="center">
@@ -392,91 +303,61 @@ footer{background:var(--ink);color:#C9BBA6;padding:56px 0 40px;position:relative
       <p class="lead">Стоимость указана отдельно за каждый месяц проекта. В декабре к пакету добавляется приз для победителя от партнёра.</p>
     </div>
     <div class="price-grid">
-      <div class="price gen rv">
-        <div class="flag">топ</div>
-        <svg class="ic"><use href="#i-crown"/></svg>
-        <h3>Генеральный партнёр</h3>
+      <div class="price gen rv"><div class="flag">топ</div><svg class="ic"><use href="#i-crown"/></svg><h3>Генеральный партнёр</h3>
         <div class="p-row"><small>Ноябрь</small><b>67 500 <i>₽</i></b></div>
         <div class="p-row"><small>Декабрь</small><b>67 500 <i>₽ + приз</i></b></div>
         <div class="note">Максимальное присутствие бренда на всех площадках проекта</div>
-        <svg class="trees" style="color:#5E0D08"><use href="#trees"/></svg>
-      </div>
-      <div class="price spo rv">
-        <svg class="ic"><use href="#i-mega"/></svg>
-        <h3>Спонсор проекта</h3>
+        <svg class="trees" style="color:#5E0D08"><use href="#trees"/></svg></div>
+      <div class="price spo rv"><svg class="ic"><use href="#i-mega"/></svg><h3>Спонсор проекта</h3>
         <div class="p-row"><small>Ноябрь</small><b>37 500 <i>₽</i></b></div>
         <div class="p-row"><small>Декабрь</small><b>37 500 <i>₽ + приз</i></b></div>
         <div class="note">Баланс охвата и бюджета для заметного присутствия</div>
-        <svg class="trees" style="color:#6E4E05"><use href="#trees"/></svg>
-      </div>
-      <div class="price bus rv">
-        <svg class="ic"><use href="#i-case"/></svg>
-        <h3>Деловой партнёр</h3>
+        <svg class="trees" style="color:#6E4E05"><use href="#trees"/></svg></div>
+      <div class="price bus rv"><svg class="ic"><use href="#i-case"/></svg><h3>Деловой партнёр</h3>
         <div class="p-row"><small>Ноябрь</small><b>22 500 <i>₽</i></b></div>
         <div class="p-row"><small>Декабрь</small><b>22 500 <i>₽ + приз</i></b></div>
         <div class="note">Старт в социальном проекте с базовым набором инструментов</div>
-        <svg class="trees" style="color:#9A6E12"><use href="#trees"/></svg>
-      </div>
+        <svg class="trees" style="color:#9A6E12"><use href="#trees"/></svg></div>
     </div>
   </div>
 </section>
 
-<!-- ============ СОСТАВ ПАКЕТОВ ============ -->
 <section class="sec" style="background:var(--cream2)">
   <div class="wrap">
     <div class="center"><h2 class="h2">Что входит в пакет?</h2></div>
     <div class="month">Ноябрь</div>
     <div class="pack-grid">
-      <div class="pack gen rv"><div class="pack-h"><svg class="ic"><use href="#i-crown"/></svg>Генеральный партнёр</div>
-        <ul>
-          <li><svg class="ic"><use href="#i-check"/></svg>Топ-баннер на сайте на 30 суток</li>
-          <li><svg class="ic"><use href="#i-check"/></svg>Посты в соцсетях на выбор — ВК / Телеграм / Макс (пакет 10 постов)</li>
-          <li><svg class="ic"><use href="#i-check"/></svg>Авторская статья о ресторане на сайте на 30 суток</li>
-          <li><svg class="ic"><use href="#i-check"/></svg>Логотип партнёра, активная ссылка в статьях и проекте на сайте</li>
-        </ul>
-      </div>
-      <div class="pack spo rv"><div class="pack-h"><svg class="ic"><use href="#i-mega"/></svg>Спонсор проекта</div>
-        <ul>
-          <li><svg class="ic"><use href="#i-check"/></svg>Баннер верхний боковой на 30 суток</li>
-          <li><svg class="ic"><use href="#i-check"/></svg>Посты в соцсетях на выбор — ВК / Телеграм / Макс (пакет 10 постов)</li>
-          <li><svg class="ic"><use href="#i-check"/></svg>Логотип партнёра, активная ссылка в статьях и проекте на сайте</li>
-        </ul>
-      </div>
-      <div class="pack bus rv"><div class="pack-h"><svg class="ic"><use href="#i-case"/></svg>Деловой партнёр</div>
-        <ul>
-          <li><svg class="ic"><use href="#i-check"/></svg>Баннер верхний боковой на 30 суток <b>или</b> 5 постов — ВК / Телеграм / Макс</li>
-          <li><svg class="ic"><use href="#i-check"/></svg>Логотип партнёра, активная ссылка в статьях и проекте на сайте</li>
-        </ul>
-      </div>
+      <div class="pack gen rv"><div class="pack-h"><svg class="ic"><use href="#i-crown"/></svg>Генеральный партнёр</div><ul>
+        <li><svg class="ic"><use href="#i-check"/></svg>Топ-баннер на сайте на 30 суток</li>
+        <li><svg class="ic"><use href="#i-check"/></svg>Посты в соцсетях на выбор — ВК / Телеграм / Макс (пакет 10 постов)</li>
+        <li><svg class="ic"><use href="#i-check"/></svg>Авторская статья о ресторане на сайте на 30 суток</li>
+        <li><svg class="ic"><use href="#i-check"/></svg>Логотип партнёра, активная ссылка в статьях и проекте на сайте</li></ul></div>
+      <div class="pack spo rv"><div class="pack-h"><svg class="ic"><use href="#i-mega"/></svg>Спонсор проекта</div><ul>
+        <li><svg class="ic"><use href="#i-check"/></svg>Баннер верхний боковой на 30 суток</li>
+        <li><svg class="ic"><use href="#i-check"/></svg>Посты в соцсетях на выбор — ВК / Телеграм / Макс (пакет 10 постов)</li>
+        <li><svg class="ic"><use href="#i-check"/></svg>Логотип партнёра, активная ссылка в статьях и проекте на сайте</li></ul></div>
+      <div class="pack bus rv"><div class="pack-h"><svg class="ic"><use href="#i-case"/></svg>Деловой партнёр</div><ul>
+        <li><svg class="ic"><use href="#i-check"/></svg>Баннер верхний боковой на 30 суток <b>или</b> 5 постов — ВК / Телеграм / Макс</li>
+        <li><svg class="ic"><use href="#i-check"/></svg>Логотип партнёра, активная ссылка в статьях и проекте на сайте</li></ul></div>
     </div>
     <div class="month">Декабрь</div>
     <div class="pack-grid">
-      <div class="pack gen rv"><div class="pack-h"><svg class="ic"><use href="#i-crown"/></svg>Генеральный партнёр</div>
-        <ul>
-          <li><svg class="ic"><use href="#i-check"/></svg>Топ-баннер на сайте на 30 суток</li>
-          <li><svg class="ic"><use href="#i-check"/></svg>Посты в соцсетях на выбор — ВК / Телеграм / Макс (пакет 10 постов)</li>
-          <li><svg class="ic"><use href="#i-check"/></svg>Авторская статья о ресторане на сайте на 30 суток</li>
-          <li><svg class="ic"><use href="#i-check"/></svg>Логотип партнёра, активная ссылка в статьях и проекте на сайте</li>
-        </ul>
-      </div>
-      <div class="pack spo rv"><div class="pack-h"><svg class="ic"><use href="#i-mega"/></svg>Спонсор проекта</div>
-        <ul>
-          <li><svg class="ic"><use href="#i-check"/></svg>Баннер верхний боковой на 30 суток</li>
-          <li><svg class="ic"><use href="#i-check"/></svg>Посты в соцсетях на выбор — ВК / Телеграм / Макс (пакет 10 постов)</li>
-          <li><svg class="ic"><use href="#i-check"/></svg>Логотип партнёра, активная ссылка в статьях и проекте на сайте</li>
-        </ul>
-      </div>
-      <div class="pack bus rv"><div class="pack-h"><svg class="ic"><use href="#i-case"/></svg>Деловой партнёр</div>
-        <ul>
-          <li><svg class="ic"><use href="#i-check"/></svg>Баннер верхний боковой на 30 суток <b>или</b> 5 постов — ВК / Телеграм / Макс</li>
-          <li><svg class="ic"><use href="#i-check"/></svg>Логотип партнёра, активная ссылка в статьях и проекте на сайте</li>
-        </ul>
-      </div>
+      <div class="pack gen rv"><div class="pack-h"><svg class="ic"><use href="#i-crown"/></svg>Генеральный партнёр</div><ul>
+        <li><svg class="ic"><use href="#i-check"/></svg>Топ-баннер на сайте на 30 суток</li>
+        <li><svg class="ic"><use href="#i-check"/></svg>Посты в соцсетях на выбор — ВК / Телеграм / Макс (пакет 10 постов)</li>
+        <li><svg class="ic"><use href="#i-check"/></svg>Авторская статья о ресторане на сайте на 30 суток</li>
+        <li><svg class="ic"><use href="#i-check"/></svg>Логотип партнёра, активная ссылка в статьях и проекте на сайте</li></ul></div>
+      <div class="pack spo rv"><div class="pack-h"><svg class="ic"><use href="#i-mega"/></svg>Спонсор проекта</div><ul>
+        <li><svg class="ic"><use href="#i-check"/></svg>Баннер верхний боковой на 30 суток</li>
+        <li><svg class="ic"><use href="#i-check"/></svg>Посты в соцсетях на выбор — ВК / Телеграм / Макс (пакет 10 постов)</li>
+        <li><svg class="ic"><use href="#i-check"/></svg>Логотип партнёра, активная ссылка в статьях и проекте на сайте</li></ul></div>
+      <div class="pack bus rv"><div class="pack-h"><svg class="ic"><use href="#i-case"/></svg>Деловой партнёр</div><ul>
+        <li><svg class="ic"><use href="#i-check"/></svg>Баннер верхний боковой на 30 суток <b>или</b> 5 постов — ВК / Телеграм / Макс</li>
+        <li><svg class="ic"><use href="#i-check"/></svg>Логотип партнёра, активная ссылка в статьях и проекте на сайте</li></ul></div>
     </div>
   </div>
 </section>
 
-<!-- ============ ОХВАТ ============ -->
 <section class="sec">
   <div class="wrap">
     <div class="center">
@@ -493,7 +374,6 @@ footer{background:var(--ink);color:#C9BBA6;padding:56px 0 40px;position:relative
   </div>
 </section>
 
-<!-- ============ ВОЗМОЖНОСТИ ============ -->
 <section class="sec" style="padding-top:0">
   <div class="wrap">
     <div class="opp-bar rv">
@@ -518,7 +398,6 @@ footer{background:var(--ink);color:#C9BBA6;padding:56px 0 40px;position:relative
   </div>
 </section>
 
-<!-- ============ CTA ============ -->
 <section class="sec cta">
   <div class="deco" style="left:-40px;bottom:-20px;width:220px;transform:rotate(-30deg);color:#8E1B14"><svg><use href="#d-pen"/></svg></div>
   <div class="deco" style="right:-20px;top:-10px;width:110px;color:#8E1B14;opacity:.35"><svg><use href="#d-leaf"/></svg></div>
@@ -546,7 +425,6 @@ footer{background:var(--ink);color:#C9BBA6;padding:56px 0 40px;position:relative
   </div>
 </section>
 
-<!-- ============ FOOTER ============ -->
 <footer>
   <div class="wrap">
     <div class="deco-strip" aria-hidden="true">
@@ -560,15 +438,13 @@ footer{background:var(--ink);color:#C9BBA6;padding:56px 0 40px;position:relative
       <svg style="color:#E8A33D;width:44px;transform:rotate(40deg)"><use href="#d-leaf"/></svg>
     </div>
     <div class="f-row" style="margin-top:36px">
-      <!-- PNG: белый Про Город -->
       <span class="logo-slot slot-pg-white">
-        <img src="logo-progorod-white.png" alt="Про Город Сыктывкар">
+        <img src="logo-progorod-white.png" alt="Про Город Сыктывкар" loading="lazy" decoding="async">
         <svg class="logo-fb" style="color:#fff"><use href="#lg-pg"/></svg>
       </span>
       <div class="nu-script">Народный Учитель</div>
-      <!-- PNG: Спасский -->
       <span class="logo-slot slot-sp-sm">
-        <img src="logo-spasskiy.png" alt="Ресторан «Спасский»">
+        <img src="logo-spasskiy.png" alt="Ресторан «Спасский»" loading="lazy" decoding="async">
         <svg class="logo-fb logo-spasskiy"><use href="#lg-sp"/></svg>
       </span>
     </div>
@@ -580,17 +456,13 @@ footer{background:var(--ink);color:#C9BBA6;padding:56px 0 40px;position:relative
 </footer>
 
 <script>
-// Появление блоков
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});
 document.querySelectorAll('.rv').forEach(el=>io.observe(el));
-
-// Логотипы: если PNG не найден — включаем SVG-fallback
 document.querySelectorAll('.logo-slot').forEach(slot=>{
   const img=slot.querySelector('img');
-  if(!img) {slot.classList.add('fb');return;}
-  const fail=()=>{img.remove();slot.classList.add('fb');};
-  if(img.complete&&img.naturalWidth===0){fail();}
-  else img.addEventListener('error',fail);
+  if(!img){slot.classList.add('fb');return}
+  const fail=()=>{img.remove();slot.classList.add('fb')};
+  if(img.complete&&img.naturalWidth===0)fail();else img.addEventListener('error',fail);
 });
 </script>
 </body>
